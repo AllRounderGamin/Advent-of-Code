@@ -1,0 +1,7 @@
+input.txt
+x64/
+.vs/
+
+*.vcxproj
+*.vcxproj.*
+*.sln
