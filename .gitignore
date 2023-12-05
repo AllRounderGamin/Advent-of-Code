@@ -1,6 +1,7 @@
 input.txt
 x64/
 .vs/
+.idea/
 
 *.vcxproj
 *.vcxproj.*
