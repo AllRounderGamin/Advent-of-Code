@@ -200,12 +200,8 @@ void problem2() {
 	}
 }
 
-// coords loop back to 0 0
-
 
 int main() {
 	problem1();
 	problem2();
 }
-
-// google area of a polygon formula, mmight make part 2 plausible

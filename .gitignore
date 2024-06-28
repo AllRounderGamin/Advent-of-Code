@@ -6,5 +6,8 @@ x64/
 *.vcxproj.*
 *.sln
 
-input.txt
-testData.txt
+*.txt
+
+bin/
+obj/
+*.csproj
