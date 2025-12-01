@@ -8,7 +8,8 @@ int main (int argc, char *argv[]){
     input = fopen("input.txt", "r");
     char rotation[8];
     int position = 50;
-    int counter = 0;
+    int counter1 = 0;
+    int counter2 = 0;
 
     while(fgets(rotation, 8, input)){
         int overflow = 0;
@@ -18,7 +19,7 @@ int main (int argc, char *argv[]){
             while (position < 0){
                 position = 100 + position;
                 if (startPos != 0){
-                    counter++;
+                    counter2++;
                 }
                 startPos = position;
             }
@@ -27,16 +28,17 @@ int main (int argc, char *argv[]){
             while (position > 99){
                 position = position - 100;
                 if (position != 0){
-                    counter++;
+                    counter2++;
                 }
             }
         }
         // Above removed or added 100 to factor in starting at 0
         if (position == 0){
-            counter++;
+            counter1++;
+            counter2++;
         }
     }
-    printf("SOLUTION: %d\n", counter);
+    printf("SOLUTION\nDay 1: %d\nDay2: %d\n", counter1, counter2);
 
     return 0;
 }
